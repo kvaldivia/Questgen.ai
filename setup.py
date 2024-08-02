@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name="Questgen",
@@ -17,7 +17,7 @@ setup(
         "networkx==3.1",
         "numpy>=1.22.4",
         "scipy==1.12.0",
-        "scikit-learn==1.2.2",
+        "scikit-learn==1.5.0",
         "unidecode>=1.3",
         "future==0.18.3",
         "joblib==1.2.0",
@@ -26,6 +26,7 @@ setup(
         "flashtext==2.7",
         "pandas==1.5.3",
         "sentencepiece==0.2.0",
+        "pke @ git+https://github.com/kvaldivia/pke",
     ],
     package_data={"Questgen": ["questgen.py",
                                "mcq.py", "train_gpu.py", "encoding.py"]},
